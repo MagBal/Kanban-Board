@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800,800i');
+ * {
+     box-sizing: border-box;
+}
+ body {
+     margin: 0 auto;
+     max-width: 2000px;
+     font-family: 'Open Sans', sans-serif;
+     text-align: center;
+     background: #C0C0C0;
+}
+ .board {
+     background-color: #494949;
+     padding: 30px;
+     width: 100%;
+}
+ .board h1 {
+     font-size: 40px;
+     color: #FF8C00;
+}
+ .column-container {
+     display: flex;
+     display: -web-kit-flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     margin: 5%;
+}
+ .create-column {
+     margin: 0 auto;
+     text-align: center;
+     width: 160px;
+     height: 40px;
+     background-color: #000;
+     color: #FFF;
+     font-size: 1.2rem;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 5px 5px 1px #A9A9A9;
+}
+ .create-column:hover {
+     cursor: pointer;
+     background-color: #FF8C00;
+}
+ .column {
+     border: 5px solid #fdfe00;
+     background: #778899;
+     padding: 10px;
+     width: 250px;
+     min-height: 200px;
+}
+ .column h2 {
+     border-bottom: 5px solid #fdfe00;
+     font-size: 30px;
+}
+ .card-list {
+     list-style-type: none;
+     padding-left: 0;
+     margin-left: 0;
+     min-height: 12vh;
+}
+ .column-add-card {
+     float: left;
+     width: 80px;
+     height: 55px;
+     padding: 5px;
+     background-color: #000;
+     color: #FFF;
+     font-size: 80%;
+     margin-right: 3px;
+     border: none;
+     border-radius: 5px;
+     overflow-wrap: break-word;
+}
+ .column-add-card:hover {
+     cursor: pointer;
+     background-color: #FF8C00;
+}
+ .btn-delete {
+     width: 20px;
+     height: 18px;
+     background-color: #000;
+     color: #FFF;
+     font-size: 10px;
+     border: none;
+     border-radius: 2px;
+     box-shadow: 0 2px 2px #535353;
+     margin-right: 1px;
+     float: left;
+     text-align: center;
+}
+ .card {
+     width: 150px;
+     height: 150px;
+     box-shadow: 10px 10px 5px #535353;
+     background-color: #39ff14;
+     float: left;
+     margin: 10%;
+     overflow-wrap: break-word;
+}
+ .important {
+     /*width: 150px;
+     height: 150px;
+     box-shadow: 10px 10px 5px #535353;*/
+     background-color: #FF8C00;
+     /*float: left;
+     margin: 10%;
+     overflow-wrap: break-word;*/
+}
+ .card-description {
+     font-size: 110%;
+     font-weight: 700;
+     font-style: italic;
+     padding: 2px;
+     padding-top: 25px;
+     text-align: center;
+}
+ li .btn-delete {
+     box-shadow: none;
+     margin-right: 0;
+     float: right;
+}
+ .card-placeholder {
+     width: 150px;
+     height: 150px;
+     float: left;
+     margin: 10%;
+     border: dotted 1px black;
+}
+ @media (max-width: 767px) {
+     .column-container {
+         display: block;
+         margin: 0 auto;
+    }
+     .create-column {
+         box-shadow: none;
+         margin-bottom: 10px;
+    }
+     .create-column:hover {
+         background: #000;
+    }
+     .column {
+         margin: 0 auto;
+         padding: 5px;
+         width: 100%;
+    }
+     .column-add-card {
+         width: 100%;
+         height: 30px;
+         margin: 5px 2px;
+         font-size: 90%;
+         box-shadow: none;
+         float: none;
+    }
+     .column-add-card:hover {
+         background: #000;
+    }
+     .btn-delete {
+         float: none;
+    }
+     .card {
+         display: block;
+         width: 150px;
+         height: 150px;
+         box-shadow: none;
+         margin-bottom: 10px;
+         float: none;
+         text-align: center;
+         margin: 0 auto;
+         margin-bottom: 10px;
+         list-style-type: none;
+    }
+     .important {
+         display: block;
+         width: 150px;
+         height: 150px;
+         box-shadow: none;
+         margin-bottom: 10px;
+         float: none;
+         text-align: center;
+         margin: 0 auto;
+         margin-bottom: 10px;
+         list-style-type: none;
+    }
+     .card-description {
+         font-size: 80%;
+         padding-top: 10px;
+    }
+     li .btn-delete {
+         float: none;
+    }
+}
