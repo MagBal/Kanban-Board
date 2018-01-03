@@ -1,15 +1,16 @@
 function Card(id, name, isImportant) {
     var self = this;
     this.id = id;
+    this.name = name;
     this.isImportant = isImportant;
-    this.name = name || 'Card';
     this.element = createCard();
 
     function createCard() {
-        var card = $('<li class="card"></li>');
-        if (isImportant) {
-            var card = $('<li class="important"></li>');
+        var card = $('<li>').addClass('card');
+        if (self.isImportant) {
+            card.addClass('important');
         }
+
         var cardDescription = $('<p class="card-description"></p>');
         var cardDeleteBtn = $('<button class="btn-delete">x</button>');
         cardDeleteBtn.click(function() {

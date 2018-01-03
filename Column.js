@@ -18,6 +18,12 @@ function Column(id, name) {
 
         columnAddCard.click(function(event) {
             var cardName = prompt("Enter the name of the card");
+            if (cardName == null) {
+                return;
+            }
+            if (cardName.length == 0) {
+                cardName = 'Card';
+            }
             event.preventDefault();
             $.ajax({
                 url: baseUrl + '/card',
@@ -37,12 +43,18 @@ function Column(id, name) {
 
         columnAddImportantCard.click(function(event) {
             var cardName = prompt("Enter the name of the card");
+            if (cardName == null) {
+                return;
+            }
+            if (cardName.length == 0) {
+                cardName = 'Card';
+            }
             event.preventDefault();
             $.ajax({
                 url: baseUrl + '/card',
                 method: 'POST',
                 data: {
-                    name: cardName,
+                    name: '[I]' + cardName,
                     bootcamp_kanban_column_id: self.id
                 },
                 success: function(response) {

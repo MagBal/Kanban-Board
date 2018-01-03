@@ -88,7 +88,10 @@
      float: left;
      text-align: center;
 }
- .card {
+.card.important {
+     background-color: #FF8C00;
+ }
+.card {
      width: 150px;
      height: 150px;
      box-shadow: 10px 10px 5px #535353;
@@ -96,15 +99,6 @@
      float: left;
      margin: 10%;
      overflow-wrap: break-word;
-}
- .important {
-     /*width: 150px;
-     height: 150px;
-     box-shadow: 10px 10px 5px #535353;*/
-     background-color: #FF8C00;
-     /*float: left;
-     margin: 10%;
-     overflow-wrap: break-word;*/
 }
  .card-description {
      font-size: 110%;
@@ -158,18 +152,6 @@
          float: none;
     }
      .card {
-         display: block;
-         width: 150px;
-         height: 150px;
-         box-shadow: none;
-         margin-bottom: 10px;
-         float: none;
-         text-align: center;
-         margin: 0 auto;
-         margin-bottom: 10px;
-         list-style-type: none;
-    }
-     .important {
          display: block;
          width: 150px;
          height: 150px;
