@@ -1,1 +1,4 @@
-# exercise12_7
+# Kanban Board
+
+Fully functional kanban created in
+HTML, CSS3, jQuery, AJAX, API
